@@ -14,6 +14,7 @@ import Footer from './components/Footer'
 import PageRefrigeration from './components/PageRefrigeration'
 import PageEnergie from './components/PageEnergie'
 import PageConcept from './components/PageConcept'
+import PageRealisations from './components/PageRealisations'
 import ChatWidget from './components/ChatWidget'
 import BookingModal from './components/BookingModal'
 import SEOHead from './components/SEOHead'
@@ -70,6 +71,12 @@ function App() {
           <>
             <SEOHead {...seoData.histoire} />
             <NotreHistoire />
+          </>
+        } />
+        <Route path="/realisations" element={
+          <>
+            <SEOHead {...seoData.realisations} />
+            <PageRealisations onBookingClick={() => setIsBookingModalOpen(true)} />
           </>
         } />
       </Routes>

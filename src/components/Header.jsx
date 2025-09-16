@@ -9,11 +9,11 @@ const Header = ({ onBookingClick }) => {
 
   const navigation = [
     { name: 'Accueil', href: '/' },
-    { name: 'Notre Histoire', href: '/#histoire' },
+    { name: 'Notre Histoire', href: '/notre-histoire' },
     { name: 'Réfrigération', href: '/refrigeration' },
     { name: 'Énergie & Confort', href: '/energie' },
     { name: 'Concept & Agencement', href: '/concept' },
-    { name: 'Réalisations', href: '/#realisations' },
+    { name: 'Réalisations', href: '/realisations' },
     { name: 'Contact', href: '/#contact' }
   ]
 
