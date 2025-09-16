@@ -168,8 +168,8 @@ const PageConcept = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Concept & Agencement
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              L'alliance parfaite du design et de la technique pour des espaces uniques
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+              Créateurs d'espaces de vie exceptionnels. Cuisines professionnelles sur mesure, dressings optimisés, rénovations complètes : nous transformons vos idées en réalité avec un savoir-faire artisanal unique et 15 ans d'expérience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">

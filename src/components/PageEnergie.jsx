@@ -110,8 +110,8 @@ const PageEnergie = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Énergie & Confort
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Solutions énergétiques intelligentes pour votre confort et vos économies
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+              Spécialistes des pompes à chaleur, climatisation et énergies renouvelables. Solutions haute performance pour réduire vos factures énergétiques jusqu'à 70% tout en améliorant votre confort thermique.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
