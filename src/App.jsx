@@ -66,6 +66,12 @@ function App() {
             <PageConcept onBookingClick={() => setIsBookingModalOpen(true)} />
           </>
         } />
+        <Route path="/notre-histoire" element={
+          <>
+            <SEOHead {...seoData.histoire} />
+            <NotreHistoire />
+          </>
+        } />
       </Routes>
       <Footer />
       
