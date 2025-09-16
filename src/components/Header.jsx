@@ -14,7 +14,7 @@ const Header = ({ onBookingClick }) => {
     { name: 'Énergie & Confort', href: '/energie' },
     { name: 'Concept & Agencement', href: '/concept' },
     { name: 'Réalisations', href: '/realisations' },
-    { name: 'Contact', href: '/#contact' }
+    { name: 'Contact', href: '/contact' }
   ]
 
   const handleNavClick = (href) => {

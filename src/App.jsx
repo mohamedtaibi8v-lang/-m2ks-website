@@ -15,6 +15,7 @@ import PageRefrigeration from './components/PageRefrigeration'
 import PageEnergie from './components/PageEnergie'
 import PageConcept from './components/PageConcept'
 import PageRealisations from './components/PageRealisations'
+import PageContact from './components/PageContact'
 import ChatWidget from './components/ChatWidget'
 import BookingModal from './components/BookingModal'
 import SEOHead from './components/SEOHead'
@@ -77,6 +78,12 @@ function App() {
           <>
             <SEOHead {...seoData.realisations} />
             <PageRealisations onBookingClick={() => setIsBookingModalOpen(true)} />
+          </>
+        } />
+        <Route path="/contact" element={
+          <>
+            <SEOHead {...seoData.contact} />
+            <PageContact onBookingClick={() => setIsBookingModalOpen(true)} />
           </>
         } />
       </Routes>
