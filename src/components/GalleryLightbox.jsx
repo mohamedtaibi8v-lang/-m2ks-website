@@ -186,6 +186,7 @@ const GalleryLightbox = ({ images = [], categories = [] }) => {
             <img 
               src={image.src} 
               alt={image.title}
+              loading="lazy"
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
@@ -241,6 +242,7 @@ const GalleryLightbox = ({ images = [], categories = [] }) => {
               <img 
                 src={image.src} 
                 alt={image.title}
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
@@ -345,6 +347,7 @@ const GalleryLightbox = ({ images = [], categories = [] }) => {
               <img 
                 src={filteredImages[currentIndex].src}
                 alt={filteredImages[currentIndex].title}
+                loading="lazy"
                 className="max-w-full max-h-full object-contain"
               />
             </div>

@@ -15,7 +15,7 @@ const Footer = () => {
               <img 
                 src="/logo-m2ks.png" 
                 alt="M2KS" 
-                className="h-8 w-auto mb-4"
+                className="h-6 w-auto mb-4"
               />
             </div>
             
