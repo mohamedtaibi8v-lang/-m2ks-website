@@ -42,7 +42,7 @@ const Header = ({ onBookingClick }) => {
               <img 
                 src="/logo-m2ks.png" 
                 alt="M2KS" 
-                className="h-8 sm:h-10 w-auto"
+                className="h-6 sm:h-8 w-auto"
               />
             </Link>
           </div>
