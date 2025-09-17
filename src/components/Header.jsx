@@ -39,17 +39,16 @@ const Header = ({ onBookingClick }) => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="text-2xl font-bold" style={{ color: 'var(--m2ks-blue)' }}>
-                M2KS
-              </div>
-              <div className="ml-2 text-sm text-gray-600 hidden sm:block">
-                Spécialiste en Réfrigération, Énergies & Agencement
-              </div>
+              <img 
+                src="/logo-m2ks.png" 
+                alt="M2KS" 
+                className="h-8 sm:h-10 w-auto"
+              />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8">
             {navigation.map((item) => (
               item.href.startsWith('/#') ? (
                 <a
@@ -59,7 +58,7 @@ const Header = ({ onBookingClick }) => {
                     e.preventDefault()
                     handleNavClick(item.href)
                   }}
-                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -67,7 +66,7 @@ const Header = ({ onBookingClick }) => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
                 >
                   {item.name}
                 </Link>
@@ -76,26 +75,30 @@ const Header = ({ onBookingClick }) => {
           </nav>
 
           {/* Contact Button */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center text-sm text-gray-600">
+          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
+            <div className="hidden xl:flex items-center text-sm text-gray-600">
               <Phone className="h-4 w-4 mr-1" style={{ color: 'var(--m2ks-green)' }} />
               <span className="font-semibold">03 74 47 48 29</span>
             </div>
             <Button 
               variant="outline"
-              className="border-green-600 text-green-600 hover:bg-green-50"
+              size="sm"
+              className="border-green-600 text-green-600 hover:bg-green-50 text-xs xl:text-sm"
               onClick={() => window.open('tel:0374474829')}
             >
-              <Phone className="h-4 w-4 mr-2" />
-              Urgence 7j/7
+              <Phone className="h-4 w-4 mr-1 xl:mr-2" />
+              <span className="hidden xl:inline">Urgence 7j/7</span>
+              <span className="xl:hidden">Urgence</span>
             </Button>
             <Button 
-              className="text-white"
+              size="sm"
+              className="text-white text-xs xl:text-sm"
               style={{ backgroundColor: 'var(--m2ks-green)' }}
               onClick={onBookingClick}
             >
-              <Calendar className="h-4 w-4 mr-2" />
-              Planifier RDV
+              <Calendar className="h-4 w-4 mr-1 xl:mr-2" />
+              <span className="hidden xl:inline">Planifier RDV</span>
+              <span className="xl:hidden">RDV</span>
             </Button>
           </div>
 

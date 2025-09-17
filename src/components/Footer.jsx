@@ -12,10 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h3 className="text-3xl font-bold mb-2">M2KS</h3>
-              <p className="text-gray-300 text-lg">
-                Spécialiste en Réfrigération, Énergies & Agencement
-              </p>
+              <img 
+                src="/logo-m2ks.png" 
+                alt="M2KS" 
+                className="h-12 w-auto mb-4"
+              />
             </div>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
