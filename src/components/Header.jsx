@@ -36,43 +36,46 @@ const Header = ({ onBookingClick }) => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12 sm:h-14">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              <img 
-                src="/logo-m2ks.png" 
-                alt="M2KS" 
-                className="h-4 sm:h-5 md:h-6 w-auto"
-              />
-            </Link>
-          </div>
+          {/* Logo + Navigation ensemble */}
+          <div className="flex items-center space-x-8">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <Link to="/" className="flex items-center">
+                <img 
+                  src="/logo-m2ks.png" 
+                  alt="M2KS" 
+                  className="h-4 sm:h-5 md:h-6 w-auto"
+                />
+              </Link>
+            </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-6 xl:space-x-8">
-            {navigation.map((item) => (
-              item.href.startsWith('/#') ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    handleNavClick(item.href)
-                  }}
-                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
-                >
-                  {item.name}
-                </Link>
-              )
-            ))}
-          </nav>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex space-x-6 xl:space-x-8">
+              {navigation.map((item) => (
+                item.href.startsWith('/#') ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleNavClick(item.href)
+                    }}
+                    className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-gray-700 hover:text-[var(--m2ks-blue)] px-2 xl:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              ))}
+            </nav>
+          </div>
 
           {/* Contact Button */}
           <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">

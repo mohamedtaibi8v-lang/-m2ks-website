@@ -26,7 +26,7 @@ const Hero = ({ onBookingClick }) => {
         <div className="max-w-4xl mx-auto">
           {/* Main headline */}
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -45,7 +45,7 @@ const Hero = ({ onBookingClick }) => {
           
           {/* Subtitle */}
           <motion.p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
@@ -110,7 +110,7 @@ const Hero = ({ onBookingClick }) => {
               >
                 <Shield className="h-12 w-12 mb-3" style={{ color: 'var(--m2ks-green)' }} />
               </motion.div>
-              <h3 className="text-lg font-semibold mb-2">Fiabilité Garantie</h3>
+              <h3 className="text-base font-semibold mb-2">Fiabilité Garantie</h3>
               <p className="text-gray-200 text-sm">Interventions sans sous-traitance</p>
             </motion.div>
             <motion.div 
@@ -125,7 +125,7 @@ const Hero = ({ onBookingClick }) => {
               >
                 <Users className="h-12 w-12 mb-3" style={{ color: 'var(--m2ks-green)' }} />
               </motion.div>
-              <h3 className="text-lg font-semibold mb-2">Équipe Familiale</h3>
+              <h3 className="text-base font-semibold mb-2">Équipe Familiale</h3>
               <p className="text-gray-200 text-sm">Mohamed, Karima, Kaïs, Soulayman</p>
             </motion.div>
             <motion.div 
@@ -140,7 +140,7 @@ const Hero = ({ onBookingClick }) => {
               >
                 <Award className="h-12 w-12 mb-3" style={{ color: 'var(--m2ks-green)' }} />
               </motion.div>
-              <h3 className="text-lg font-semibold mb-2">Expertise Certifiée</h3>
+              <h3 className="text-base font-semibold mb-2">Expertise Certifiée</h3>
               <p className="text-gray-200 text-sm">QualiPAC, FEEBAT, KNX</p>
             </motion.div>
           </motion.div>
